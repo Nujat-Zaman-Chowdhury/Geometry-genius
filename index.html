@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Geometry genius by DOM.</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="m-8">
+   <header>
+
+   </header>
+   <main>
+        <!-- main content container -->
+        <div class="flex flex-col md:flex-row">
+            <!-- shape content container -->
+            <div class="flex-1 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Triangle Card-->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/triangle.png" alt="" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-center text-2xl">Triangle</h2>
+                      <p class="text-center">Area (A) = 0.5 X b X h</p>
+                      <div>
+                      <input class="bg-[#F1F1F1] w-24 text-xl p-2 rounded-sm" type="text" name="" id="" placeholder="b">
+                      <span class="mr-4 ml-2">cm</span>
+                      <input class="bg-[#F1F1F1] w-24 text-xl p-2 rounded-sm" type="text" name="" id="" placeholder="h">
+                      <span class="mr-4 ml-2">cm</span>
+                      </div>
+                      <div class="card-actions">
+                        <button class="btn bg-[#1090D8] w-full text-white font-bold text-xl">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- rectangle Card-->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/rectangle.png" alt="" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Parallelogram Card-->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/parallelogram.png" alt="" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- Area calculation container -->
+            <div class="w-96 border border-gray-600 p-4 rounded-md">
+                <h3 class="text-3xl text-center p-4">Area Calculation</h3>
+            </div>
+        </div>
+   </main>
+   <script src="scripts/triangle.js"></script>
+  </body>
 </html>
